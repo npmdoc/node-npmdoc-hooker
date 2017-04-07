@@ -1,0 +1,397 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="http://github.com/cowboy/javascript-hooker">hooker (v0.2.3)</a>
+</h1>
+<h4>Monkey-patch (hook) functions for debugging and stuff.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hooker">module hooker</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hooker.filter">
+            function <span class="apidocSignatureSpan">hooker.</span>filter
+            <span class="apidocSignatureSpan">(context, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hooker.hook">
+            function <span class="apidocSignatureSpan">hooker.</span>hook
+            <span class="apidocSignatureSpan">(obj, props, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hooker.orig">
+            function <span class="apidocSignatureSpan">hooker.</span>orig
+            <span class="apidocSignatureSpan">(obj, prop)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hooker.override">
+            function <span class="apidocSignatureSpan">hooker.</span>override
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hooker.preempt">
+            function <span class="apidocSignatureSpan">hooker.</span>preempt
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hooker.unhook">
+            function <span class="apidocSignatureSpan">hooker.</span>unhook
+            <span class="apidocSignatureSpan">(obj, props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hooker" id="apidoc.module.hooker">module hooker</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hooker.filter" id="apidoc.element.hooker.filter">
+        function <span class="apidocSignatureSpan">hooker.</span>filter
+        <span class="apidocSignatureSpan">(context, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter = function (context, args) {
+  return new HookerFilter(context, args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+#### Signature:
+`hooker.preempt(value)`
+
+### hooker.filter
+When a pre-hook returns the result of this function, the context and
+arguments passed will be applied into the original function.
+#### Signature:
+`hooker.<span class="apidocCodeKeywordSpan">filter</span>(context, arguments)`
+
+
+## Examples
+See the unit tests for more examples.
+
+```javascript
+var hooker = require('hooker');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hooker.hook" id="apidoc.element.hooker.hook">
+        function <span class="apidocSignatureSpan">hooker.</span>hook
+        <span class="apidocSignatureSpan">(obj, props, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hook = function (obj, props, options) {
+  // If the props argument was omitted, shuffle the arguments.
+  if (options == null) {
+    options = props;
+    props = null;
+  }
+  // If just a function is passed instead of an options hash, use that as a
+  // pre-hook function.
+  if (typeof options === "function") {
+    options = {pre: options};
+  }
+
+  // Hook the specified method of the object.
+  return forMethods(obj, props, function(obj, prop) {
+    // The original (current) method.
+    var orig = obj[prop];
+    // The new hooked function.
+    function hooked() {
+      var result, origResult, tmp;
+
+      // Get an array of arguments.
+      var args = slice.call(arguments);
+
+      // If passName option is specified, prepend prop to the args array,
+      // passing it as the first argument to any specified hook functions.
+      if (options.passName) {
+        args.unshift(prop);
+      }
+
+      // If a pre-hook function was specified, invoke it in the current
+      // context with the passed-in arguments, and store its result.
+      if (options.pre) {
+        result = options.pre.apply(this, args);
+      }
+
+      if (result instanceof HookerFilter) {
+        // If the pre-hook returned hooker.filter(context, args), invoke the
+        // original function with that context and arguments, and store its
+        // result.
+        origResult = result = orig.apply(result.context, result.args);
+      } else if (result instanceof HookerPreempt) {
+        // If the pre-hook returned hooker.preempt(value) just use the passed
+        // value and don't execute the original function.
+        origResult = result = result.value;
+      } else {
+        // Invoke the original function in the current context with the
+        // passed-in arguments, and store its result.
+        origResult = orig.apply(this, arguments);
+        // If the pre-hook returned hooker.override(value), use the passed
+        // value, otherwise use the original function's result.
+        result = result instanceof HookerOverride ? result.value : origResult;
+      }
+
+      if (options.post) {
+        // If a post-hook function was specified, invoke it in the current
+        // context, passing in the result of the original function as the
+        // first argument, followed by any passed-in arguments.
+        tmp = options.post.apply(this, [origResult].concat(args));
+        if (tmp instanceof HookerOverride) {
+          // If the post-hook returned hooker.override(value), use the passed
+          // value, otherwise use the previously computed result.
+          result = tmp.value;
+        }
+      }
+
+      // Unhook if the "once" option was specified.
+      if (options.once) {
+        exports.unhook(obj, prop);
+      }
+
+      // Return the result!
+      return result;
+    }
+    // Re-define the method.
+    obj[prop] = hooked;
+    // Fail if the function couldn't be hooked.
+    if (obj[prop] !== hooked) { return false; }
+    // Store a reference to the original method as a property on the new one.
+    obj[prop]._orig = orig;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+This code should work just fine in Node.js:
+
+First, install the module with: `npm install hooker`
+
+```javascript
+var hooker = require('hooker');
+hooker.<span class="apidocCodeKeywordSpan">hook</span>(Math, "max", function() {
+  console.log(arguments.length + " arguments passed");
+});
+Math.max(5, 6, 7) // logs: "3 arguments passed", returns 7
+```
+
+Or in the browser:
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hooker.orig" id="apidoc.element.hooker.orig">
+        function <span class="apidocSignatureSpan">hooker.</span>orig
+        <span class="apidocSignatureSpan">(obj, prop)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">orig = function (obj, prop) {
+  return obj[prop]._orig;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+The optional `props` argument can be a method name, array of method names or null. If null (or omitted), all methods of `object`
+will be unhooked.
+#### Returns:
+An array of unhooked method names.
+
+### hooker.orig
+Get a reference to the original method from a hooked function.
+#### Signature:
+`hooker.<span class="apidocCodeKeywordSpan">orig</span>(object, props)`
+
+### hooker.override
+When a pre- or post-hook returns the result of this function, the value
+passed will be used in place of the original function's return value. Any
+post-hook override value will take precedence over a pre-hook override value.
+#### Signature:
+`hooker.override(value)`
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hooker.override" id="apidoc.element.hooker.override">
+        function <span class="apidocSignatureSpan">hooker.</span>override
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">override = function (value) {
+  return new HookerOverride(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+`hooker.orig(object, props)`
+
+### hooker.override
+When a pre- or post-hook returns the result of this function, the value
+passed will be used in place of the original function's return value. Any
+post-hook override value will take precedence over a pre-hook override value.
+#### Signature:
+`hooker.<span class="apidocCodeKeywordSpan">override</span>(value)`
+
+### hooker.preempt
+When a pre-hook returns the result of this function, the value passed will
+be used in place of the original function's return value, and the original
+function will NOT be executed.
+#### Signature:
+`hooker.preempt(value)`
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hooker.preempt" id="apidoc.element.hooker.preempt">
+        function <span class="apidocSignatureSpan">hooker.</span>preempt
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">preempt = function (value) {
+  return new HookerPreempt(value);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+`hooker.override(value)`
+
+### hooker.preempt
+When a pre-hook returns the result of this function, the value passed will
+be used in place of the original function's return value, and the original
+function will NOT be executed.
+#### Signature:
+`hooker.<span class="apidocCodeKeywordSpan">preempt</span>(value)`
+
+### hooker.filter
+When a pre-hook returns the result of this function, the context and
+arguments passed will be applied into the original function.
+#### Signature:
+`hooker.filter(context, arguments)`
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hooker.unhook" id="apidoc.element.hooker.unhook">
+        function <span class="apidocSignatureSpan">hooker.</span>unhook
+        <span class="apidocSignatureSpan">(obj, props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unhook = function (obj, props) {
+  return forMethods(obj, props, function(obj, prop) {
+    // Get a reference to the original method, if it exists.
+    var orig = exports.orig(obj, prop);
+    // If there's no original method, it can't be unhooked, so fail.
+    if (!orig) { return false; }
+    // Unhook the method.
+    obj[prop] = orig;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Returns:
+An array of hooked method names.
+
+### hooker.unhook
+Un-monkey-patch (unhook) one or more methods of an object.
+#### Signature:
+`hooker.<span class="apidocCodeKeywordSpan">unhook</span>(object [, props ])`
+#### `props`
+The optional `props` argument can be a method name, array of method names or null. If null (or omitted), all methods of `object`
+will be unhooked.
+#### Returns:
+An array of unhooked method names.
+
+### hooker.orig
+Get a reference to the original method from a hooked function.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
