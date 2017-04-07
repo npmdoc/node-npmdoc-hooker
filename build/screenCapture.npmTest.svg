@@ -1,12 +1,12 @@
-<svg height="11102" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="11102" fill="#555" width="720"></rect>
+<svg height="11198" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="11198" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 <tspan x="10" y="42">&gt; npmdoc-hooker@0.0.1 test /home/travis/build/npmdoc/node-npmdoc-hooker</tspan>
 <tspan x="10" y="58">&gt; (set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)</tspan>
 <tspan x="10" y="74"></tspan>
 <tspan x="10" y="90"></tspan>
-<tspan x="10" y="106">[MODE_BUILD=npmTest] - 2017-04-07T02:56:39Z - npm-testing /home/travis/build/npmdoc/node-npmdoc-\</tspan>
+<tspan x="10" y="106">[MODE_BUILD=npmTest] - 2017-04-07T02:58:14Z - npm-testing /home/travis/build/npmdoc/node-npmdoc-\</tspan>
 <tspan x="10" y="122">hooker</tspan>
 <tspan x="10" y="138"></tspan>
 <tspan x="10" y="154"></tspan>
@@ -14,21 +14,21 @@
 <tspan x="10" y="186">c-hooker/test.js</tspan>
 <tspan x="10" y="202">merging file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/test-report.json to test-r\</tspan>
 <tspan x="10" y="218">eport</tspan>
-<tspan x="10" y="234">&gt; server listening on http-port 47265</tspan>
+<tspan x="10" y="234">&gt; server listening on http-port 54142</tspan>
 <tspan x="10" y="250">starting</tspan>
 <tspan x="10" y="266">{ async: [Function: async] }</tspan>
 <tspan x="10" y="282">created apidoc file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/apidoc.html</tspan>
 <tspan x="10" y="298"></tspan>
 <tspan x="10" y="314"></tspan>
 <tspan x="10" y="330">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/elect\</tspan>
-<tspan x="10" y="346">ron.15b4657a3fb0.88f071de5d727.html</tspan>
+<tspan x="10" y="346">ron.15b465917dc0.9fdeb8bc2141f.html</tspan>
 <tspan x="10" y="362"></tspan>
 <tspan x="10" y="378">[node test-case 1 of 6 passed] - testCase_buildLib_default</tspan>
 <tspan x="10" y="394">[node test-case 2 of 6 passed] - testCase_buildReadme_default</tspan>
 <tspan x="10" y="410">[node test-case 3 of 6 passed] - testCase_buildTest_default</tspan>
 <tspan x="10" y="426"></tspan>
 <tspan x="10" y="442">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/elect\</tspan>
-<tspan x="10" y="458">ron.15b4657a46f0.44d409bd75148.html</tspan>
+<tspan x="10" y="458">ron.15b4659181d0.5c36e31d15fc4.html</tspan>
 <tspan x="10" y="474"></tspan>
 <tspan x="10" y="490">starting</tspan>
 <tspan x="10" y="506">{ async: [Function: async] }</tspan>
@@ -46,51 +46,51 @@
 <tspan x="10" y="698">{ async: [Function: async] }</tspan>
 <tspan x="10" y="714">starting</tspan>
 <tspan x="10" y="730">{ async: [Function: async] }</tspan>
-<tspan x="10" y="746">&gt; server listening on http-port 56118</tspan>
-<tspan x="10" y="762">starting</tspan>
-<tspan x="10" y="778">{ async: [Function: async] }</tspan>
-<tspan x="10" y="794">merging file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/test-report.json to test-r\</tspan>
-<tspan x="10" y="810">eport</tspan>
-<tspan x="10" y="826">merging file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/test-report.json to test-r\</tspan>
-<tspan x="10" y="842">eport</tspan>
-<tspan x="10" y="858">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="874">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="890">starting</tspan>
-<tspan x="10" y="906">{ async: [Function: async] }</tspan>
-<tspan x="10" y="922">[6790:0407/025642:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="938">[6790:0407/025642:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="954">[6808:0407/025642:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="970">[6808:0407/025642:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="986">[6886:0407/025642:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
-<tspan x="10" y="1002">in process gpu-process. </tspan>
-<tspan x="10" y="1018">[6898:0407/025642:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
-<tspan x="10" y="1034">in process gpu-process. </tspan>
+<tspan x="10" y="746">starting</tspan>
+<tspan x="10" y="762">{ async: [Function: async] }</tspan>
+<tspan x="10" y="778">starting</tspan>
+<tspan x="10" y="794">{ async: [Function: async] }</tspan>
+<tspan x="10" y="810">starting</tspan>
+<tspan x="10" y="826">{ async: [Function: async] }</tspan>
+<tspan x="10" y="842">starting</tspan>
+<tspan x="10" y="858">{ async: [Function: async] }</tspan>
+<tspan x="10" y="874">starting</tspan>
+<tspan x="10" y="890">{ async: [Function: async] }</tspan>
+<tspan x="10" y="906">starting</tspan>
+<tspan x="10" y="922">{ async: [Function: async] }</tspan>
+<tspan x="10" y="938">&gt; server listening on http-port 46290</tspan>
+<tspan x="10" y="954">starting</tspan>
+<tspan x="10" y="970">{ async: [Function: async] }</tspan>
+<tspan x="10" y="986">starting</tspan>
+<tspan x="10" y="1002">{ async: [Function: async] }</tspan>
+<tspan x="10" y="1018">merging file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/test-report.json to test-r\</tspan>
+<tspan x="10" y="1034">eport</tspan>
 <tspan x="10" y="1050">starting</tspan>
 <tspan x="10" y="1066">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1082">[6808:0407/025642:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
-<tspan x="10" y="1098">[6790:0407/025642:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
-<tspan x="10" y="1114">starting</tspan>
-<tspan x="10" y="1130">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1146">starting</tspan>
-<tspan x="10" y="1162">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1178">starting</tspan>
-<tspan x="10" y="1194">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1210"></tspan>
-<tspan x="10" y="1226">browserTest - opened url /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/apidoc.html</tspan>
-<tspan x="10" y="1242"></tspan>
-<tspan x="10" y="1258"></tspan>
-<tspan x="10" y="1274">browserTest - opened url http://127.0.0.1:47265?modeTest=1</tspan>
-<tspan x="10" y="1290"></tspan>
-<tspan x="10" y="1306">starting</tspan>
-<tspan x="10" y="1322">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1338">starting</tspan>
-<tspan x="10" y="1354">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1370">starting</tspan>
-<tspan x="10" y="1386">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1402">starting</tspan>
-<tspan x="10" y="1418">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1434">starting</tspan>
-<tspan x="10" y="1450">{ async: [Function: async] }</tspan>
+<tspan x="10" y="1082">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="1098">starting</tspan>
+<tspan x="10" y="1114">{ async: [Function: async] }</tspan>
+<tspan x="10" y="1130">[13039:0407/025817:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="1146">[13039:0407/025817:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="1162">merging file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/test-report.json to test-r\</tspan>
+<tspan x="10" y="1178">eport</tspan>
+<tspan x="10" y="1194">[13169:0407/025817:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads\</tspan>
+<tspan x="10" y="1210"> in process gpu-process. </tspan>
+<tspan x="10" y="1226">starting</tspan>
+<tspan x="10" y="1242">{ async: [Function: async] }</tspan>
+<tspan x="10" y="1258">[13039:0407/025817:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
+<tspan x="10" y="1274">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="1290">starting</tspan>
+<tspan x="10" y="1306">{ async: [Function: async] }</tspan>
+<tspan x="10" y="1322">[13049:0407/025817:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="1338">[13049:0407/025817:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="1354">starting</tspan>
+<tspan x="10" y="1370">{ async: [Function: async] }</tspan>
+<tspan x="10" y="1386">starting</tspan>
+<tspan x="10" y="1402">{ async: [Function: async] }</tspan>
+<tspan x="10" y="1418">[13212:0407/025817:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads\</tspan>
+<tspan x="10" y="1434"> in process gpu-process. </tspan>
+<tspan x="10" y="1450">[13049:0407/025818:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
 <tspan x="10" y="1466">starting</tspan>
 <tspan x="10" y="1482">{ async: [Function: async] }</tspan>
 <tspan x="10" y="1498">starting</tspan>
@@ -101,14 +101,14 @@
 <tspan x="10" y="1578">{ async: [Function: async] }</tspan>
 <tspan x="10" y="1594">starting</tspan>
 <tspan x="10" y="1610">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1626">starting</tspan>
-<tspan x="10" y="1642">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1658">starting</tspan>
-<tspan x="10" y="1674">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1690">starting</tspan>
-<tspan x="10" y="1706">{ async: [Function: async] }</tspan>
-<tspan x="10" y="1722">starting</tspan>
-<tspan x="10" y="1738">{ async: [Function: async] }</tspan>
+<tspan x="10" y="1626"></tspan>
+<tspan x="10" y="1642">browserTest - opened url /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/apidoc.html</tspan>
+<tspan x="10" y="1658"></tspan>
+<tspan x="10" y="1674">starting</tspan>
+<tspan x="10" y="1690">{ async: [Function: async] }</tspan>
+<tspan x="10" y="1706"></tspan>
+<tspan x="10" y="1722">browserTest - opened url http://127.0.0.1:54142?modeTest=1</tspan>
+<tspan x="10" y="1738"></tspan>
 <tspan x="10" y="1754">starting</tspan>
 <tspan x="10" y="1770">{ async: [Function: async] }</tspan>
 <tspan x="10" y="1786">starting</tspan>
@@ -129,18 +129,18 @@
 <tspan x="10" y="2026">{ async: [Function: async] }</tspan>
 <tspan x="10" y="2042">starting</tspan>
 <tspan x="10" y="2058">{ async: [Function: async] }</tspan>
-<tspan x="10" y="2074">[6808:0407/025644:INFO:CONSOLE(250)] "----------|-----------|-----------|-----------|-----------\</tspan>
-<tspan x="10" y="2090">|</tspan>
-<tspan x="10" y="2106">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
-<tspan x="10" y="2122">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="2138">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="2154">All files |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="2170">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="2186">", source: file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/electron.15b4657a46f0.44d409b\</tspan>
-<tspan x="10" y="2202">d75148.html (250)</tspan>
-<tspan x="10" y="2218">[6808:0407/025644:INFO:CONSOLE(250)] "created coverage file:///tmp/build/coverage.html/index.htm\</tspan>
-<tspan x="10" y="2234">l", source: file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/electron.15b4657a46f0.44d409\</tspan>
-<tspan x="10" y="2250">bd75148.html (250)</tspan>
+<tspan x="10" y="2074">starting</tspan>
+<tspan x="10" y="2090">{ async: [Function: async] }</tspan>
+<tspan x="10" y="2106">starting</tspan>
+<tspan x="10" y="2122">{ async: [Function: async] }</tspan>
+<tspan x="10" y="2138">starting</tspan>
+<tspan x="10" y="2154">{ async: [Function: async] }</tspan>
+<tspan x="10" y="2170">starting</tspan>
+<tspan x="10" y="2186">{ async: [Function: async] }</tspan>
+<tspan x="10" y="2202">starting</tspan>
+<tspan x="10" y="2218">{ async: [Function: async] }</tspan>
+<tspan x="10" y="2234">starting</tspan>
+<tspan x="10" y="2250">{ async: [Function: async] }</tspan>
 <tspan x="10" y="2266">starting</tspan>
 <tspan x="10" y="2282">{ async: [Function: async] }</tspan>
 <tspan x="10" y="2298">starting</tspan>
@@ -155,20 +155,20 @@
 <tspan x="10" y="2442">{ async: [Function: async] }</tspan>
 <tspan x="10" y="2458">starting</tspan>
 <tspan x="10" y="2474">{ async: [Function: async] }</tspan>
-<tspan x="10" y="2490">starting</tspan>
-<tspan x="10" y="2506">{ async: [Function: async] }</tspan>
-<tspan x="10" y="2522">starting</tspan>
-<tspan x="10" y="2538">{ async: [Function: async] }</tspan>
-<tspan x="10" y="2554">starting</tspan>
-<tspan x="10" y="2570">{ async: [Function: async] }</tspan>
-<tspan x="10" y="2586">starting</tspan>
-<tspan x="10" y="2602">{ async: [Function: async] }</tspan>
-<tspan x="10" y="2618">starting</tspan>
-<tspan x="10" y="2634">{ async: [Function: async] }</tspan>
-<tspan x="10" y="2650">starting</tspan>
-<tspan x="10" y="2666">{ async: [Function: async] }</tspan>
-<tspan x="10" y="2682">starting</tspan>
-<tspan x="10" y="2698">{ async: [Function: async] }</tspan>
+<tspan x="10" y="2490">[13049:0407/025820:INFO:CONSOLE(250)] "----------|-----------|-----------|-----------|----------\</tspan>
+<tspan x="10" y="2506">-|</tspan>
+<tspan x="10" y="2522">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="2538">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2554">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2570">All files |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="2586">----------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="2602">", source: file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/electron.15b4659181d0.5c36e31\</tspan>
+<tspan x="10" y="2618">d15fc4.html (250)</tspan>
+<tspan x="10" y="2634">starting</tspan>
+<tspan x="10" y="2650">{ async: [Function: async] }</tspan>
+<tspan x="10" y="2666">[13049:0407/025820:INFO:CONSOLE(250)] "created coverage file:///tmp/build/coverage.html/index.ht\</tspan>
+<tspan x="10" y="2682">ml", source: file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/electron.15b4659181d0.5c36e\</tspan>
+<tspan x="10" y="2698">31d15fc4.html (250)</tspan>
 <tspan x="10" y="2714">starting</tspan>
 <tspan x="10" y="2730">{ async: [Function: async] }</tspan>
 <tspan x="10" y="2746">starting</tspan>
@@ -197,17 +197,17 @@
 <tspan x="10" y="3114">{ async: [Function: async] }</tspan>
 <tspan x="10" y="3130">starting</tspan>
 <tspan x="10" y="3146">{ async: [Function: async] }</tspan>
-<tspan x="10" y="3162">[node test-case 4 of 6 passed] - testCase_buildApp_default</tspan>
-<tspan x="10" y="3178">starting</tspan>
-<tspan x="10" y="3194">{ async: [Function: async] }</tspan>
-<tspan x="10" y="3210">starting</tspan>
-<tspan x="10" y="3226">{ async: [Function: async] }</tspan>
-<tspan x="10" y="3242">starting</tspan>
-<tspan x="10" y="3258">{ async: [Function: async] }</tspan>
-<tspan x="10" y="3274">starting</tspan>
-<tspan x="10" y="3290">{ async: [Function: async] }</tspan>
-<tspan x="10" y="3306">starting</tspan>
-<tspan x="10" y="3322">{ async: [Function: async] }</tspan>
+<tspan x="10" y="3162">starting</tspan>
+<tspan x="10" y="3178">{ async: [Function: async] }</tspan>
+<tspan x="10" y="3194">starting</tspan>
+<tspan x="10" y="3210">{ async: [Function: async] }</tspan>
+<tspan x="10" y="3226">starting</tspan>
+<tspan x="10" y="3242">{ async: [Function: async] }</tspan>
+<tspan x="10" y="3258">starting</tspan>
+<tspan x="10" y="3274">{ async: [Function: async] }</tspan>
+<tspan x="10" y="3290">starting</tspan>
+<tspan x="10" y="3306">{ async: [Function: async] }</tspan>
+<tspan x="10" y="3322">[node test-case 4 of 6 passed] - testCase_buildApp_default</tspan>
 <tspan x="10" y="3338">starting</tspan>
 <tspan x="10" y="3354">{ async: [Function: async] }</tspan>
 <tspan x="10" y="3370">starting</tspan>
@@ -594,50 +594,50 @@
 <tspan x="10" y="9466">{ async: [Function: async] }</tspan>
 <tspan x="10" y="9482">starting</tspan>
 <tspan x="10" y="9498">{ async: [Function: async] }</tspan>
-<tspan x="10" y="9514"></tspan>
-<tspan x="10" y="9530">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/buil\</tspan>
-<tspan x="10" y="9546">d/screenCapture.npmTest.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-hooker_2Ftmp_2Fb\</tspan>
-<tspan x="10" y="9562">uild_2Fapidoc.html.png</tspan>
-<tspan x="10" y="9578"></tspan>
-<tspan x="10" y="9594">starting</tspan>
-<tspan x="10" y="9610">{ async: [Function: async] }</tspan>
+<tspan x="10" y="9514">starting</tspan>
+<tspan x="10" y="9530">{ async: [Function: async] }</tspan>
+<tspan x="10" y="9546">starting</tspan>
+<tspan x="10" y="9562">{ async: [Function: async] }</tspan>
+<tspan x="10" y="9578">starting</tspan>
+<tspan x="10" y="9594">{ async: [Function: async] }</tspan>
+<tspan x="10" y="9610"></tspan>
 <tspan x="10" y="9626">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/buil\</tspan>
 <tspan x="10" y="9642">d/screenCapture.npmTest.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-hooker_2Ftmp_2Fb\</tspan>
-<tspan x="10" y="9658">uild_2Fapidoc.html.html</tspan>
-<tspan x="10" y="9674">starting</tspan>
-<tspan x="10" y="9690">{ async: [Function: async] }</tspan>
-<tspan x="10" y="9706"></tspan>
-<tspan x="10" y="9722">browserTest - exit-code 0 - /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/apidoc.html</tspan>
-<tspan x="10" y="9738"></tspan>
-<tspan x="10" y="9754">[node test-case 5 of 6 passed] - testCase_buildApidoc_default</tspan>
-<tspan x="10" y="9770"></tspan>
-<tspan x="10" y="9786">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/buil\</tspan>
-<tspan x="10" y="9802">d/screenCapture.npmTest.browser..png</tspan>
-<tspan x="10" y="9818"></tspan>
-<tspan x="10" y="9834">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/buil\</tspan>
-<tspan x="10" y="9850">d/screenCapture.npmTest.browser..html</tspan>
+<tspan x="10" y="9658">uild_2Fapidoc.html.png</tspan>
+<tspan x="10" y="9674"></tspan>
+<tspan x="10" y="9690">starting</tspan>
+<tspan x="10" y="9706">{ async: [Function: async] }</tspan>
+<tspan x="10" y="9722">starting</tspan>
+<tspan x="10" y="9738">{ async: [Function: async] }</tspan>
+<tspan x="10" y="9754">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/buil\</tspan>
+<tspan x="10" y="9770">d/screenCapture.npmTest.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-hooker_2Ftmp_2Fb\</tspan>
+<tspan x="10" y="9786">uild_2Fapidoc.html.html</tspan>
+<tspan x="10" y="9802"></tspan>
+<tspan x="10" y="9818">browserTest - exit-code 0 - /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/apidoc.html</tspan>
+<tspan x="10" y="9834"></tspan>
+<tspan x="10" y="9850">[node test-case 5 of 6 passed] - testCase_buildApidoc_default</tspan>
 <tspan x="10" y="9866">starting</tspan>
 <tspan x="10" y="9882">{ async: [Function: async] }</tspan>
 <tspan x="10" y="9898"></tspan>
-<tspan x="10" y="9914">browserTest - exit-code 0 - http://127.0.0.1:47265?modeTest=1</tspan>
-<tspan x="10" y="9930"></tspan>
+<tspan x="10" y="9914">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/buil\</tspan>
+<tspan x="10" y="9930">d/screenCapture.npmTest.browser..png</tspan>
 <tspan x="10" y="9946"></tspan>
-<tspan x="10" y="9962">browserTest - merged coverage from /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/coverage.npm\</tspan>
-<tspan x="10" y="9978">Test.browser.%2F.json</tspan>
-<tspan x="10" y="9994"></tspan>
-<tspan x="10" y="10010"></tspan>
-<tspan x="10" y="10026">browserTest - merging test-report from /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/test-rep\</tspan>
-<tspan x="10" y="10042">ort.npmTest.browser.%2F.json</tspan>
+<tspan x="10" y="9962">starting</tspan>
+<tspan x="10" y="9978">{ async: [Function: async] }</tspan>
+<tspan x="10" y="9994">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/buil\</tspan>
+<tspan x="10" y="10010">d/screenCapture.npmTest.browser..html</tspan>
+<tspan x="10" y="10026"></tspan>
+<tspan x="10" y="10042">browserTest - exit-code 0 - http://127.0.0.1:54142?modeTest=1</tspan>
 <tspan x="10" y="10058"></tspan>
-<tspan x="10" y="10074">[node test-case 6 of 6 passed] - testCase_webpage_default</tspan>
-<tspan x="10" y="10090">starting</tspan>
-<tspan x="10" y="10106">{ async: [Function: async] }</tspan>
-<tspan x="10" y="10122">starting</tspan>
-<tspan x="10" y="10138">{ async: [Function: async] }</tspan>
-<tspan x="10" y="10154">starting</tspan>
-<tspan x="10" y="10170">{ async: [Function: async] }</tspan>
-<tspan x="10" y="10186">starting</tspan>
-<tspan x="10" y="10202">{ async: [Function: async] }</tspan>
+<tspan x="10" y="10074"></tspan>
+<tspan x="10" y="10090">browserTest - merged coverage from /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/coverage.npm\</tspan>
+<tspan x="10" y="10106">Test.browser.%2F.json</tspan>
+<tspan x="10" y="10122"></tspan>
+<tspan x="10" y="10138"></tspan>
+<tspan x="10" y="10154">browserTest - merging test-report from /home/travis/build/npmdoc/node-npmdoc-hooker/tmp/test-rep\</tspan>
+<tspan x="10" y="10170">ort.npmTest.browser.%2F.json</tspan>
+<tspan x="10" y="10186"></tspan>
+<tspan x="10" y="10202">[node test-case 6 of 6 passed] - testCase_webpage_default</tspan>
 <tspan x="10" y="10218">starting</tspan>
 <tspan x="10" y="10234">{ async: [Function: async] }</tspan>
 <tspan x="10" y="10250">starting</tspan>
@@ -664,34 +664,40 @@
 <tspan x="10" y="10586">{ async: [Function: async] }</tspan>
 <tspan x="10" y="10602">starting</tspan>
 <tspan x="10" y="10618">{ async: [Function: async] }</tspan>
-<tspan x="10" y="10634">---------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="10650">File                       |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
-<tspan x="10" y="10666">---------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="10682">   node-npmdoc-hooker/     |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="10698">      example.js           |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="10714">      lib.npmdoc_hooker.js |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="10730">      test.js              |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="10746">---------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="10762">All files                  |       100 |       100 |       100 |       100 |</tspan>
-<tspan x="10" y="10778">---------------------------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="10794"></tspan>
-<tspan x="10" y="10810">created coverage file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/coverage.html/ind\</tspan>
-<tspan x="10" y="10826">ex.html</tspan>
-<tspan x="10" y="10842">merging file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/test-report.json to test-r\</tspan>
-<tspan x="10" y="10858">eport</tspan>
-<tspan x="10" y="10874"></tspan>
-<tspan x="10" y="10890">-------------------------------------------------------</tspan>
-<tspan x="10" y="10906">| test-report - buildNpmdoc - node - linux v6.10.2 - 2017-04-07T02:56:17.910Z</tspan>
-<tspan x="10" y="10922">|   38258 ms            0 failed        6 passed      |</tspan>
-<tspan x="10" y="10938">-------------------------------------------------------</tspan>
-<tspan x="10" y="10954"></tspan>
-<tspan x="10" y="10970">created test-report file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/test-report.ht\</tspan>
-<tspan x="10" y="10986">ml</tspan>
-<tspan x="10" y="11002"></tspan>
-<tspan x="10" y="11018"></tspan>
-<tspan x="10" y="11034">npmTest - 0 failed tests</tspan>
+<tspan x="10" y="10634">starting</tspan>
+<tspan x="10" y="10650">{ async: [Function: async] }</tspan>
+<tspan x="10" y="10666">starting</tspan>
+<tspan x="10" y="10682">{ async: [Function: async] }</tspan>
+<tspan x="10" y="10698">starting</tspan>
+<tspan x="10" y="10714">{ async: [Function: async] }</tspan>
+<tspan x="10" y="10730">---------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="10746">File                       |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
+<tspan x="10" y="10762">---------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="10778">   node-npmdoc-hooker/     |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="10794">      example.js           |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="10810">      lib.npmdoc_hooker.js |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="10826">      test.js              |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="10842">---------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="10858">All files                  |       100 |       100 |       100 |       100 |</tspan>
+<tspan x="10" y="10874">---------------------------|-----------|-----------|-----------|-----------|</tspan>
+<tspan x="10" y="10890"></tspan>
+<tspan x="10" y="10906">created coverage file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/coverage.html/ind\</tspan>
+<tspan x="10" y="10922">ex.html</tspan>
+<tspan x="10" y="10938">merging file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/test-report.json to test-r\</tspan>
+<tspan x="10" y="10954">eport</tspan>
+<tspan x="10" y="10970"></tspan>
+<tspan x="10" y="10986">-------------------------------------------------------</tspan>
+<tspan x="10" y="11002">| test-report - buildNpmdoc - node - linux v6.10.2 - 2017-04-07T02:57:35.025Z</tspan>
+<tspan x="10" y="11018">|   56596 ms            0 failed        6 passed      |</tspan>
+<tspan x="10" y="11034">-------------------------------------------------------</tspan>
 <tspan x="10" y="11050"></tspan>
-<tspan x="10" y="11066"></tspan>
-<tspan x="10" y="11082">[MODE_BUILD=npmTest] - 2017-04-07T02:56:59Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="11066">created test-report file:///home/travis/build/npmdoc/node-npmdoc-hooker/tmp/build/test-report.ht\</tspan>
+<tspan x="10" y="11082">ml</tspan>
+<tspan x="10" y="11098"></tspan>
+<tspan x="10" y="11114"></tspan>
+<tspan x="10" y="11130">npmTest - 0 failed tests</tspan>
+<tspan x="10" y="11146"></tspan>
+<tspan x="10" y="11162"></tspan>
+<tspan x="10" y="11178">[MODE_BUILD=npmTest] - 2017-04-07T02:58:35Z - EXIT_CODE - 0</tspan>
 </text>
 </svg>
